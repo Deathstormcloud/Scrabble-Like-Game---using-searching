@@ -1,4 +1,11 @@
-//IMPROVEMENT: adding points to the correctly  guessed words 
+//Ryan Sowersby
+//Alejandro Perez
+//Gongyu Yan
+//Added: Adding points to the correctly guessed words 
+//Added: Changing letters out when the user wants to exchange a letter for a new one
+//Added: Replay system to allow the user to play again after each round
+//Added: Total score after each round to keep track of the users score
+//Added: Unique values for each letter and the amount used per word
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,7 +31,7 @@ public class ScrabbleGame {
                 System.out.println("File not found!");
                 return; 
             }
-
+            //Adds replay feature
       while (keepPlaying) {
              // WIll produce 4 random letter for the user to unscramble
             //using a string
@@ -35,7 +42,7 @@ public class ScrabbleGame {
                 randLetters += letters.charAt(rand.nextInt(letters.length())); // append to the random string
             }
             System.out.println("Random letters: " + randLetters);
-            
+            // Allows user to opt in for changing a letter in their given set
             System.out.println("would you like to change a letter? (y/n)");
             String exchangeChoice = inputScanner.nextLine().trim().toLowerCase();
 
@@ -80,7 +87,7 @@ public class ScrabbleGame {
        
     }
 
-
+// Adds different point values for each letter
     public static int calculatePoints(String word) {
         Map<Character, Integer> letterPoints = new HashMap<>();
         letterPoints.put('a', 1); letterPoints.put('b', 3); letterPoints.put('c', 3);
