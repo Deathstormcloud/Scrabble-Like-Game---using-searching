@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ScrabbleGame",
+            "request": "launch",
+            "mainClass": "ScrabbleGame",
+            "projectName": "ScrabbleLikeGame_f8677942"
+        },
+        {
+            "type": "java",
+            "name": "ScrabbleGame",
+            "request": "launch",
+            "mainClass": "ScrabbleGame",
+            "projectName": "pers scrab_46736cfa"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        }
+    ]
+}
